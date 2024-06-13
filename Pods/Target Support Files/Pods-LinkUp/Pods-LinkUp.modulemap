@@ -1,0 +1,6 @@
+framework module Pods_LinkUp {
+  umbrella header "Pods-LinkUp-umbrella.h"
+
+  export *
+  module * { export * }
+}

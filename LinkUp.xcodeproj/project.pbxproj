@@ -1,0 +1,1205 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		045E7BFE299E241000B8EEFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045E7BFD299E241000B8EEFE /* AppDelegate.swift */; };
+		045E7C00299E241000B8EEFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045E7BFF299E241000B8EEFE /* SceneDelegate.swift */; };
+		045E7C07299E241200B8EEFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045E7C06299E241200B8EEFE /* Assets.xcassets */; };
+		045E7C0A299E241200B8EEFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045E7C08299E241200B8EEFE /* LaunchScreen.storyboard */; };
+		045E7C12299E276200B8EEFE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 045E7C11299E276200B8EEFE /* GoogleService-Info.plist */; };
+		045E7C17299E277800B8EEFE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045E7C15299E277800B8EEFE /* LoginViewController.swift */; };
+		045E7C1D299E278E00B8EEFE /* RegisterStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045E7C1A299E278D00B8EEFE /* RegisterStudentViewController.swift */; };
+		045E7C1F299E278E00B8EEFE /* AdminDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045E7C1C299E278D00B8EEFE /* AdminDashboard.swift */; };
+		045E7C23299E497100B8EEFE /* RegisterTeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045E7C22299E497100B8EEFE /* RegisterTeacherViewController.swift */; };
+		045E7C26299E4FB500B8EEFE /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045E7C25299E4FB500B8EEFE /* DatabaseManager.swift */; };
+		045E7C28299E50D200B8EEFE /* FirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045E7C27299E50D200B8EEFE /* FirestoreManager.swift */; };
+		04CFDE7D299E92AA008300F9 /* TeacherDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CFDE7C299E92AA008300F9 /* TeacherDashboard.swift */; };
+		81531A222A7D75B700A21831 /* ProgressReportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81531A212A7D75B700A21831 /* ProgressReportVC.swift */; };
+		81531A252A7D75EF00A21831 /* CustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81531A242A7D75EF00A21831 /* CustomTableView.swift */; };
+		81531A282A7D768600A21831 /* LableDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81531A272A7D768600A21831 /* LableDesign.swift */; };
+		81531A2A2A7D95A400A21831 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81531A292A7D95A400A21831 /* DataModel.swift */; };
+		81531A2C2A7ECD6800A21831 /* FireBaseFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81531A2B2A7ECD6800A21831 /* FireBaseFile.swift */; };
+		B205032F2A36DC2F00229F58 /* AssessmentManagementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B205032E2A36DC2F00229F58 /* AssessmentManagementViewController.swift */; };
+		B20503322A36E09800229F58 /* UploadQuizMarksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20503312A36E09800229F58 /* UploadQuizMarksViewController.swift */; };
+		B20503352A36E15900229F58 /* QuizMarksUploadCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20503342A36E15900229F58 /* QuizMarksUploadCustomCell.swift */; };
+		B20503372A36E3CA00229F58 /* AddQuizPortailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20503362A36E3CA00229F58 /* AddQuizPortailViewController.swift */; };
+		B205033B2A36E53500229F58 /* QuizMarksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B205033A2A36E53500229F58 /* QuizMarksTableViewCell.swift */; };
+		B205033D2A36E65900229F58 /* QuizManagementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B205033C2A36E65900229F58 /* QuizManagementViewController.swift */; };
+		B2278C572A2E4CB0007BAB19 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2278C562A2E4CB0007BAB19 /* Utilities.swift */; };
+		B2278C5A2A2F41D9007BAB19 /* ClassesManagementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2278C592A2F41D9007BAB19 /* ClassesManagementViewController.swift */; };
+		B2278C5D2A2F4486007BAB19 /* PreviewClassesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2278C5C2A2F4486007BAB19 /* PreviewClassesViewController.swift */; };
+		B2278C602A3208E2007BAB19 /* PreviewClassesCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2278C5F2A3208E2007BAB19 /* PreviewClassesCustomCell.swift */; };
+		B2278C622A320DE0007BAB19 /* ClassDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2278C612A320DE0007BAB19 /* ClassDataModel.swift */; };
+		B2278C652A3227D9007BAB19 /* classesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2278C642A3227D9007BAB19 /* classesListViewController.swift */; };
+		B2278C6A2A323FCB007BAB19 /* AssignTeacherToClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2278C692A323FCB007BAB19 /* AssignTeacherToClassViewController.swift */; };
+		B2278C6D2A325FC1007BAB19 /* AssignTeacherCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2278C6C2A325FC1007BAB19 /* AssignTeacherCustomCell.swift */; };
+		B2278C702A33C0C1007BAB19 /* ClassRoomViewControllerForTeacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2278C6F2A33C0C1007BAB19 /* ClassRoomViewControllerForTeacher.swift */; };
+		B2278C762A33CDBF007BAB19 /* TeacherProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2278C752A33CDBF007BAB19 /* TeacherProfileViewController.swift */; };
+		B2278C7A2A33E559007BAB19 /* ParentSideMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2278C792A33E559007BAB19 /* ParentSideMoreViewController.swift */; };
+		B2278C7D2A347C8E007BAB19 /* DisplayTeacherAnnouncementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2278C7C2A347C8E007BAB19 /* DisplayTeacherAnnouncementViewController.swift */; };
+		B2278C802A347CE6007BAB19 /* DisplayTeacherAnnouncementCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2278C7F2A347CE6007BAB19 /* DisplayTeacherAnnouncementCustomCell.swift */; };
+		B2278C832A347F34007BAB19 /* DisplayParentAnnouncementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2278C822A347F34007BAB19 /* DisplayParentAnnouncementViewController.swift */; };
+		B2278C862A347F8C007BAB19 /* DisplayParentAnnouncementCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2278C852A347F8C007BAB19 /* DisplayParentAnnouncementCustomCell.swift */; };
+		B2278C892A351929007BAB19 /* ClassRoomStudentsCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2278C882A351929007BAB19 /* ClassRoomStudentsCustomCell.swift */; };
+		B2278C8B2A3520F5007BAB19 /* StudentDataModelForTeacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2278C8A2A3520F5007BAB19 /* StudentDataModelForTeacher.swift */; };
+		B250A86B2A053833000BEEF5 /* ParentTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B250A86A2A053833000BEEF5 /* ParentTabBarViewController.swift */; };
+		B250A8702A0D3120000BEEF5 /* AnnouncementManagementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B250A86F2A0D3120000BEEF5 /* AnnouncementManagementViewController.swift */; };
+		B2515F0B2A17F02500EE9DB4 /* TeacherRecordDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2515F0A2A17F02500EE9DB4 /* TeacherRecordDetailViewController.swift */; };
+		B2515F0E2A180D7000EE9DB4 /* RemoveTeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2515F0D2A180D7000EE9DB4 /* RemoveTeacherViewController.swift */; };
+		B2515F112A18F29E00EE9DB4 /* RemoveTeacherCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2515F102A18F29E00EE9DB4 /* RemoveTeacherCustomCell.swift */; };
+		B25160BB2A162F2600B8F0D1 /* PreviewTeacherListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25160BA2A162F2600B8F0D1 /* PreviewTeacherListViewController.swift */; };
+		B25160BE2A16304800B8F0D1 /* CustomTeacherRecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25160BD2A16304800B8F0D1 /* CustomTeacherRecordCell.swift */; };
+		B25160C12A16B14D00B8F0D1 /* TeacherDataModelForAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25160C02A16B14D00B8F0D1 /* TeacherDataModelForAdmin.swift */; };
+		B25281E42A2211B700DB8B82 /* RemoveAnnouncementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25281E32A2211B700DB8B82 /* RemoveAnnouncementViewController.swift */; };
+		B25281E62A22129300DB8B82 /* CustomCellForRemoveAnnouncement.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25281E52A22129300DB8B82 /* CustomCellForRemoveAnnouncement.swift */; };
+		B268B3D629BB8E8E00F4DC27 /* StudentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B268B3D529BB8E8E00F4DC27 /* StudentData.swift */; };
+		B28994DA29ECC60800B24EDF /* TeacherDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28994D929ECC60800B24EDF /* TeacherDataModel.swift */; };
+		B28994DC29ECCD1B00B24EDF /* AdminData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28994DB29ECCD1B00B24EDF /* AdminData.swift */; };
+		B28994DE29ECCFB800B24EDF /* TeacherTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28994DD29ECCFB800B24EDF /* TeacherTabBarViewController.swift */; };
+		B28994E029ECD6DC00B24EDF /* TeacherSideMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28994DF29ECD6DC00B24EDF /* TeacherSideMoreViewController.swift */; };
+		B28994E329ECEBE500B24EDF /* SchoolAnnouncementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28994E229ECEBE500B24EDF /* SchoolAnnouncementViewController.swift */; };
+		B28994E529ECECA800B24EDF /* CustomAnnouncementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28994E429ECECA800B24EDF /* CustomAnnouncementCell.swift */; };
+		B28994E729ECFBE000B24EDF /* AnnouncementData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28994E629ECFBE000B24EDF /* AnnouncementData.swift */; };
+		B29753AB2A251DC6003645C6 /* AnnouncementListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29753AA2A251DC6003645C6 /* AnnouncementListViewController.swift */; };
+		B29753AF2A251F3F003645C6 /* CustomCellForUpdateAnnouncement.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29753AE2A251F3F003645C6 /* CustomCellForUpdateAnnouncement.swift */; };
+		B29753B12A252478003645C6 /* UpdateAnnouncementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29753B02A252478003645C6 /* UpdateAnnouncementViewController.swift */; };
+		B29753B92A275738003645C6 /* ParentDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29753B82A275738003645C6 /* ParentDashboard.swift */; };
+		B29753BD2A27637E003645C6 /* ParentProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29753BC2A27637E003645C6 /* ParentProfileViewController.swift */; };
+		B29753C32A27DCDC003645C6 /* ParentRecordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29753C22A27DCDC003645C6 /* ParentRecordModel.swift */; };
+		B29753C62A28A44A003645C6 /* AttendenceReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29753C52A28A44A003645C6 /* AttendenceReportViewController.swift */; };
+		B29753C92A28A99D003645C6 /* AttendenceDateCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29753C82A28A99D003645C6 /* AttendenceDateCustomCell.swift */; };
+		B29753CC2A2A4B07003645C6 /* TopImageBottomLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29753CB2A2A4B07003645C6 /* TopImageBottomLabelView.swift */; };
+		B298FE072A193B6D00BA4FF8 /* TeacherListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B298FE062A193B6D00BA4FF8 /* TeacherListViewController.swift */; };
+		B298FE0A2A193C0200BA4FF8 /* TeacherListCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B298FE092A193C0200BA4FF8 /* TeacherListCustomCell.swift */; };
+		B298FE0C2A193F5E00BA4FF8 /* UpdateTeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B298FE0B2A193F5E00BA4FF8 /* UpdateTeacherViewController.swift */; };
+		B2A888312A2148F300BD7441 /* AnnouncementCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A888302A2148F300BD7441 /* AnnouncementCustomCell.swift */; };
+		B2A8F71F29DC9F4D006061D7 /* MakeAnnouncementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A8F71E29DC9F4D006061D7 /* MakeAnnouncementViewController.swift */; };
+		B2C023982A141C9800677BC7 /* UpdateStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C023972A141C9800677BC7 /* UpdateStudentViewController.swift */; };
+		B2C39A2329E91385004016CF /* DisplayAnnouncementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C39A2229E91385004016CF /* DisplayAnnouncementViewController.swift */; };
+		B2C39A2529E9172F004016CF /* AdminTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C39A2429E9172F004016CF /* AdminTabBarViewController.swift */; };
+		B2C39A2929E958E1004016CF /* StudentManagementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C39A2829E958E1004016CF /* StudentManagementViewController.swift */; };
+		B2C39A2B29E97709004016CF /* PlusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C39A2A29E97709004016CF /* PlusViewController.swift */; };
+		B2C39A2D29EA25B3004016CF /* TeacherManagementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C39A2C29EA25B3004016CF /* TeacherManagementViewController.swift */; };
+		B2C39A3129EA2DFC004016CF /* AdminSideMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C39A3029EA2DFC004016CF /* AdminSideMoreViewController.swift */; };
+		B2C39A3329EA55FC004016CF /* SearchStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C39A3229EA55FC004016CF /* SearchStudentViewController.swift */; };
+		B2C39A3629EBB6A7004016CF /* student.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C39A3529EBB6A7004016CF /* student.swift */; };
+		B2C39A3829EBC017004016CF /* RemoveStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C39A3729EBC017004016CF /* RemoveStudentViewController.swift */; };
+		B5A28362D84B9999C312FC26 /* Pods_LinkUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274416359C9C47F92EC2807F /* Pods_LinkUp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		045E7BFA299E241000B8EEFE /* LinkUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		045E7BFD299E241000B8EEFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; usesTabs = 0; };
+		045E7BFF299E241000B8EEFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		045E7C06299E241200B8EEFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		045E7C09299E241200B8EEFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		045E7C0B299E241200B8EEFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		045E7C11299E276200B8EEFE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		045E7C15299E277800B8EEFE /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		045E7C1A299E278D00B8EEFE /* RegisterStudentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterStudentViewController.swift; sourceTree = "<group>"; };
+		045E7C1C299E278D00B8EEFE /* AdminDashboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminDashboard.swift; sourceTree = "<group>"; };
+		045E7C22299E497100B8EEFE /* RegisterTeacherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTeacherViewController.swift; sourceTree = "<group>"; };
+		045E7C25299E4FB500B8EEFE /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		045E7C27299E50D200B8EEFE /* FirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreManager.swift; sourceTree = "<group>"; };
+		04CFDE7C299E92AA008300F9 /* TeacherDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherDashboard.swift; sourceTree = "<group>"; };
+		274416359C9C47F92EC2807F /* Pods_LinkUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinkUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81531A212A7D75B700A21831 /* ProgressReportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressReportVC.swift; sourceTree = "<group>"; };
+		81531A242A7D75EF00A21831 /* CustomTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableView.swift; sourceTree = "<group>"; };
+		81531A272A7D768600A21831 /* LableDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LableDesign.swift; sourceTree = "<group>"; };
+		81531A292A7D95A400A21831 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		81531A2B2A7ECD6800A21831 /* FireBaseFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseFile.swift; sourceTree = "<group>"; };
+		8A3C46C3F6E0BAF03BB31618 /* Pods-LinkUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkUp.debug.xcconfig"; path = "Target Support Files/Pods-LinkUp/Pods-LinkUp.debug.xcconfig"; sourceTree = "<group>"; };
+		8F8A6166FA15002F36D22F48 /* Pods-LinkUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkUp.release.xcconfig"; path = "Target Support Files/Pods-LinkUp/Pods-LinkUp.release.xcconfig"; sourceTree = "<group>"; };
+		B205032E2A36DC2F00229F58 /* AssessmentManagementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssessmentManagementViewController.swift; sourceTree = "<group>"; };
+		B20503312A36E09800229F58 /* UploadQuizMarksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadQuizMarksViewController.swift; sourceTree = "<group>"; };
+		B20503342A36E15900229F58 /* QuizMarksUploadCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizMarksUploadCustomCell.swift; sourceTree = "<group>"; };
+		B20503362A36E3CA00229F58 /* AddQuizPortailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuizPortailViewController.swift; sourceTree = "<group>"; };
+		B205033A2A36E53500229F58 /* QuizMarksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizMarksTableViewCell.swift; sourceTree = "<group>"; };
+		B205033C2A36E65900229F58 /* QuizManagementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizManagementViewController.swift; sourceTree = "<group>"; };
+		B2278C562A2E4CB0007BAB19 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		B2278C592A2F41D9007BAB19 /* ClassesManagementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesManagementViewController.swift; sourceTree = "<group>"; };
+		B2278C5C2A2F4486007BAB19 /* PreviewClassesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewClassesViewController.swift; sourceTree = "<group>"; };
+		B2278C5F2A3208E2007BAB19 /* PreviewClassesCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewClassesCustomCell.swift; sourceTree = "<group>"; };
+		B2278C612A320DE0007BAB19 /* ClassDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDataModel.swift; sourceTree = "<group>"; };
+		B2278C642A3227D9007BAB19 /* classesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classesListViewController.swift; sourceTree = "<group>"; };
+		B2278C692A323FCB007BAB19 /* AssignTeacherToClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignTeacherToClassViewController.swift; sourceTree = "<group>"; };
+		B2278C6C2A325FC1007BAB19 /* AssignTeacherCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignTeacherCustomCell.swift; sourceTree = "<group>"; };
+		B2278C6F2A33C0C1007BAB19 /* ClassRoomViewControllerForTeacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassRoomViewControllerForTeacher.swift; sourceTree = "<group>"; };
+		B2278C752A33CDBF007BAB19 /* TeacherProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherProfileViewController.swift; sourceTree = "<group>"; };
+		B2278C792A33E559007BAB19 /* ParentSideMoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentSideMoreViewController.swift; sourceTree = "<group>"; };
+		B2278C7C2A347C8E007BAB19 /* DisplayTeacherAnnouncementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayTeacherAnnouncementViewController.swift; sourceTree = "<group>"; };
+		B2278C7F2A347CE6007BAB19 /* DisplayTeacherAnnouncementCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayTeacherAnnouncementCustomCell.swift; sourceTree = "<group>"; };
+		B2278C822A347F34007BAB19 /* DisplayParentAnnouncementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayParentAnnouncementViewController.swift; sourceTree = "<group>"; };
+		B2278C852A347F8C007BAB19 /* DisplayParentAnnouncementCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayParentAnnouncementCustomCell.swift; sourceTree = "<group>"; };
+		B2278C882A351929007BAB19 /* ClassRoomStudentsCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassRoomStudentsCustomCell.swift; sourceTree = "<group>"; };
+		B2278C8A2A3520F5007BAB19 /* StudentDataModelForTeacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDataModelForTeacher.swift; sourceTree = "<group>"; };
+		B250A86929FEC652000BEEF5 /* LinkUp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LinkUp.entitlements; sourceTree = "<group>"; };
+		B250A86A2A053833000BEEF5 /* ParentTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentTabBarViewController.swift; sourceTree = "<group>"; };
+		B250A86F2A0D3120000BEEF5 /* AnnouncementManagementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementManagementViewController.swift; sourceTree = "<group>"; };
+		B2515F0A2A17F02500EE9DB4 /* TeacherRecordDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherRecordDetailViewController.swift; sourceTree = "<group>"; };
+		B2515F0D2A180D7000EE9DB4 /* RemoveTeacherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveTeacherViewController.swift; sourceTree = "<group>"; };
+		B2515F102A18F29E00EE9DB4 /* RemoveTeacherCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveTeacherCustomCell.swift; sourceTree = "<group>"; };
+		B25160BA2A162F2600B8F0D1 /* PreviewTeacherListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewTeacherListViewController.swift; sourceTree = "<group>"; };
+		B25160BD2A16304800B8F0D1 /* CustomTeacherRecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTeacherRecordCell.swift; sourceTree = "<group>"; };
+		B25160C02A16B14D00B8F0D1 /* TeacherDataModelForAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherDataModelForAdmin.swift; sourceTree = "<group>"; };
+		B25281E32A2211B700DB8B82 /* RemoveAnnouncementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveAnnouncementViewController.swift; sourceTree = "<group>"; };
+		B25281E52A22129300DB8B82 /* CustomCellForRemoveAnnouncement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellForRemoveAnnouncement.swift; sourceTree = "<group>"; };
+		B268B3D529BB8E8E00F4DC27 /* StudentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentData.swift; sourceTree = "<group>"; };
+		B28994D929ECC60800B24EDF /* TeacherDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherDataModel.swift; sourceTree = "<group>"; };
+		B28994DB29ECCD1B00B24EDF /* AdminData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminData.swift; sourceTree = "<group>"; };
+		B28994DD29ECCFB800B24EDF /* TeacherTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherTabBarViewController.swift; sourceTree = "<group>"; };
+		B28994DF29ECD6DC00B24EDF /* TeacherSideMoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherSideMoreViewController.swift; sourceTree = "<group>"; };
+		B28994E229ECEBE500B24EDF /* SchoolAnnouncementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolAnnouncementViewController.swift; sourceTree = "<group>"; };
+		B28994E429ECECA800B24EDF /* CustomAnnouncementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnouncementCell.swift; sourceTree = "<group>"; };
+		B28994E629ECFBE000B24EDF /* AnnouncementData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementData.swift; sourceTree = "<group>"; };
+		B29753AA2A251DC6003645C6 /* AnnouncementListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementListViewController.swift; sourceTree = "<group>"; };
+		B29753AE2A251F3F003645C6 /* CustomCellForUpdateAnnouncement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellForUpdateAnnouncement.swift; sourceTree = "<group>"; };
+		B29753B02A252478003645C6 /* UpdateAnnouncementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateAnnouncementViewController.swift; sourceTree = "<group>"; };
+		B29753B82A275738003645C6 /* ParentDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentDashboard.swift; sourceTree = "<group>"; };
+		B29753BC2A27637E003645C6 /* ParentProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentProfileViewController.swift; sourceTree = "<group>"; };
+		B29753C22A27DCDC003645C6 /* ParentRecordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentRecordModel.swift; sourceTree = "<group>"; };
+		B29753C52A28A44A003645C6 /* AttendenceReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendenceReportViewController.swift; sourceTree = "<group>"; };
+		B29753C82A28A99D003645C6 /* AttendenceDateCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendenceDateCustomCell.swift; sourceTree = "<group>"; };
+		B29753CB2A2A4B07003645C6 /* TopImageBottomLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopImageBottomLabelView.swift; sourceTree = "<group>"; };
+		B298FE062A193B6D00BA4FF8 /* TeacherListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherListViewController.swift; sourceTree = "<group>"; };
+		B298FE092A193C0200BA4FF8 /* TeacherListCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherListCustomCell.swift; sourceTree = "<group>"; };
+		B298FE0B2A193F5E00BA4FF8 /* UpdateTeacherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTeacherViewController.swift; sourceTree = "<group>"; };
+		B2A888302A2148F300BD7441 /* AnnouncementCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementCustomCell.swift; sourceTree = "<group>"; };
+		B2A8F71E29DC9F4D006061D7 /* MakeAnnouncementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeAnnouncementViewController.swift; sourceTree = "<group>"; };
+		B2C023972A141C9800677BC7 /* UpdateStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateStudentViewController.swift; sourceTree = "<group>"; };
+		B2C39A2229E91385004016CF /* DisplayAnnouncementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayAnnouncementViewController.swift; sourceTree = "<group>"; };
+		B2C39A2429E9172F004016CF /* AdminTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminTabBarViewController.swift; sourceTree = "<group>"; };
+		B2C39A2829E958E1004016CF /* StudentManagementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentManagementViewController.swift; sourceTree = "<group>"; };
+		B2C39A2A29E97709004016CF /* PlusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusViewController.swift; sourceTree = "<group>"; };
+		B2C39A2C29EA25B3004016CF /* TeacherManagementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherManagementViewController.swift; sourceTree = "<group>"; };
+		B2C39A3029EA2DFC004016CF /* AdminSideMoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminSideMoreViewController.swift; sourceTree = "<group>"; };
+		B2C39A3229EA55FC004016CF /* SearchStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchStudentViewController.swift; sourceTree = "<group>"; };
+		B2C39A3529EBB6A7004016CF /* student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = student.swift; sourceTree = "<group>"; };
+		B2C39A3729EBC017004016CF /* RemoveStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveStudentViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		045E7BF7299E241000B8EEFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5A28362D84B9999C312FC26 /* Pods_LinkUp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		045E7BF1299E241000B8EEFE = {
+			isa = PBXGroup;
+			children = (
+				045E7BFC299E241000B8EEFE /* LinkUp */,
+				045E7BFB299E241000B8EEFE /* Products */,
+				75C44CDBBB22B3ADCA558759 /* Pods */,
+				FBD4595D81F13689759A9C4E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		045E7BFB299E241000B8EEFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				045E7BFA299E241000B8EEFE /* LinkUp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		045E7BFC299E241000B8EEFE /* LinkUp */ = {
+			isa = PBXGroup;
+			children = (
+				B29753CA2A2A4AE1003645C6 /* View */,
+				B250A86929FEC652000BEEF5 /* LinkUp.entitlements */,
+				045E7C11299E276200B8EEFE /* GoogleService-Info.plist */,
+				045E7BFD299E241000B8EEFE /* AppDelegate.swift */,
+				045E7BFF299E241000B8EEFE /* SceneDelegate.swift */,
+				045E7C24299E4FA000B8EEFE /* Resources */,
+				045E7C13299E277800B8EEFE /* LoginViewController */,
+				045E7C18299E278D00B8EEFE /* Admin */,
+				045E7C20299E279800B8EEFE /* Teacher */,
+				045E7C21299E27A300B8EEFE /* Parent */,
+				B28994E129ECEB9100B24EDF /* AnnouncementFiles */,
+				045E7C06299E241200B8EEFE /* Assets.xcassets */,
+				045E7C08299E241200B8EEFE /* LaunchScreen.storyboard */,
+				045E7C0B299E241200B8EEFE /* Info.plist */,
+				B2278C562A2E4CB0007BAB19 /* Utilities.swift */,
+			);
+			path = LinkUp;
+			sourceTree = "<group>";
+		};
+		045E7C13299E277800B8EEFE /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				045E7C15299E277800B8EEFE /* LoginViewController.swift */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		045E7C18299E278D00B8EEFE /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				B29753B32A274EA8003645C6 /* Model */,
+				045E7C19299E278D00B8EEFE /* ViewControllers */,
+			);
+			path = Admin;
+			sourceTree = "<group>";
+		};
+		045E7C19299E278D00B8EEFE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B2C39A2429E9172F004016CF /* AdminTabBarViewController.swift */,
+				B29753B22A274E64003645C6 /* AdminTabs */,
+				B2C39A2629E9581D004016CF /* studentManagement */,
+				B2C39A2729E9583A004016CF /* teacherManagement */,
+				B2278C582A2F41A7007BAB19 /* classes Management */,
+				B250A86E2A0D30B8000BEEF5 /* AnnouncementManagement */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		045E7C20299E279800B8EEFE /* Teacher */ = {
+			isa = PBXGroup;
+			children = (
+				B28994DD29ECCFB800B24EDF /* TeacherTabBarViewController.swift */,
+				B29753B62A2755A6003645C6 /* DataModel */,
+				04CFDE7B299E921A008300F9 /* TeacherTabs */,
+				B2278C742A33CD01007BAB19 /* TeacherProfileVC */,
+				B205032D2A36DBD400229F58 /* AssessmentVC */,
+				B2278C6E2A33C070007BAB19 /* ClassRoomVC */,
+				B2278C7B2A347C13007BAB19 /* TeacherAnnouncements */,
+			);
+			path = Teacher;
+			sourceTree = "<group>";
+		};
+		045E7C21299E27A300B8EEFE /* Parent */ = {
+			isa = PBXGroup;
+			children = (
+				B29753C12A27DCBB003645C6 /* ParentDataModel */,
+				B29753BA2A27632D003645C6 /* ViewControllers */,
+			);
+			path = Parent;
+			sourceTree = "<group>";
+		};
+		045E7C24299E4FA000B8EEFE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B28994D829ECC5F000B24EDF /* Model */,
+				B268B3D429BB8E6700F4DC27 /* dataStructures */,
+				045E7C25299E4FB500B8EEFE /* DatabaseManager.swift */,
+				045E7C27299E50D200B8EEFE /* FirestoreManager.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		04CFDE7B299E921A008300F9 /* TeacherTabs */ = {
+			isa = PBXGroup;
+			children = (
+				04CFDE7C299E92AA008300F9 /* TeacherDashboard.swift */,
+				B28994DF29ECD6DC00B24EDF /* TeacherSideMoreViewController.swift */,
+			);
+			path = TeacherTabs;
+			sourceTree = "<group>";
+		};
+		75C44CDBBB22B3ADCA558759 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A3C46C3F6E0BAF03BB31618 /* Pods-LinkUp.debug.xcconfig */,
+				8F8A6166FA15002F36D22F48 /* Pods-LinkUp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		81531A202A7D756700A21831 /* ProgressReport */ = {
+			isa = PBXGroup;
+			children = (
+				81531A262A7D766B00A21831 /* resoursesLable */,
+				81531A232A7D75CA00A21831 /* CustomTable */,
+				81531A212A7D75B700A21831 /* ProgressReportVC.swift */,
+				81531A292A7D95A400A21831 /* DataModel.swift */,
+				81531A2B2A7ECD6800A21831 /* FireBaseFile.swift */,
+			);
+			path = ProgressReport;
+			sourceTree = "<group>";
+		};
+		81531A232A7D75CA00A21831 /* CustomTable */ = {
+			isa = PBXGroup;
+			children = (
+				81531A242A7D75EF00A21831 /* CustomTableView.swift */,
+			);
+			path = CustomTable;
+			sourceTree = "<group>";
+		};
+		81531A262A7D766B00A21831 /* resoursesLable */ = {
+			isa = PBXGroup;
+			children = (
+				81531A272A7D768600A21831 /* LableDesign.swift */,
+			);
+			path = resoursesLable;
+			sourceTree = "<group>";
+		};
+		B205032C2A36D3DA00229F58 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				B2278C612A320DE0007BAB19 /* ClassDataModel.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		B205032D2A36DBD400229F58 /* AssessmentVC */ = {
+			isa = PBXGroup;
+			children = (
+				B205032E2A36DC2F00229F58 /* AssessmentManagementViewController.swift */,
+				B20503302A36E07D00229F58 /* QuizManagementVC */,
+			);
+			path = AssessmentVC;
+			sourceTree = "<group>";
+		};
+		B20503302A36E07D00229F58 /* QuizManagementVC */ = {
+			isa = PBXGroup;
+			children = (
+				B20503332A36E13100229F58 /* QuizMarksCustomCell */,
+				B20503312A36E09800229F58 /* UploadQuizMarksViewController.swift */,
+				B205033C2A36E65900229F58 /* QuizManagementViewController.swift */,
+			);
+			path = QuizManagementVC;
+			sourceTree = "<group>";
+		};
+		B20503332A36E13100229F58 /* QuizMarksCustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				B20503382A36E4F600229F58 /* AddQuizVC */,
+				B20503342A36E15900229F58 /* QuizMarksUploadCustomCell.swift */,
+			);
+			path = QuizMarksCustomCell;
+			sourceTree = "<group>";
+		};
+		B20503382A36E4F600229F58 /* AddQuizVC */ = {
+			isa = PBXGroup;
+			children = (
+				B20503392A36E50200229F58 /* AddQuizCustomCell */,
+				B20503362A36E3CA00229F58 /* AddQuizPortailViewController.swift */,
+			);
+			path = AddQuizVC;
+			sourceTree = "<group>";
+		};
+		B20503392A36E50200229F58 /* AddQuizCustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				B205033A2A36E53500229F58 /* QuizMarksTableViewCell.swift */,
+			);
+			path = AddQuizCustomCell;
+			sourceTree = "<group>";
+		};
+		B2278C582A2F41A7007BAB19 /* classes Management */ = {
+			isa = PBXGroup;
+			children = (
+				B205032C2A36D3DA00229F58 /* DataModel */,
+				B2278C592A2F41D9007BAB19 /* ClassesManagementViewController.swift */,
+				B2278C5B2A2F4463007BAB19 /* PreviewClassVC */,
+				B2278C632A322758007BAB19 /* AssignTeacherToClassVC */,
+			);
+			path = "classes Management";
+			sourceTree = "<group>";
+		};
+		B2278C5B2A2F4463007BAB19 /* PreviewClassVC */ = {
+			isa = PBXGroup;
+			children = (
+				B2278C5E2A3208A8007BAB19 /* CustomCellForPreviewClasses */,
+				B2278C5C2A2F4486007BAB19 /* PreviewClassesViewController.swift */,
+			);
+			path = PreviewClassVC;
+			sourceTree = "<group>";
+		};
+		B2278C5E2A3208A8007BAB19 /* CustomCellForPreviewClasses */ = {
+			isa = PBXGroup;
+			children = (
+				B2278C5F2A3208E2007BAB19 /* PreviewClassesCustomCell.swift */,
+			);
+			path = CustomCellForPreviewClasses;
+			sourceTree = "<group>";
+		};
+		B2278C632A322758007BAB19 /* AssignTeacherToClassVC */ = {
+			isa = PBXGroup;
+			children = (
+				B2278C642A3227D9007BAB19 /* classesListViewController.swift */,
+				B2278C6B2A325F84007BAB19 /* AssignTeacherCustomCell */,
+				B2278C692A323FCB007BAB19 /* AssignTeacherToClassViewController.swift */,
+			);
+			path = AssignTeacherToClassVC;
+			sourceTree = "<group>";
+		};
+		B2278C6B2A325F84007BAB19 /* AssignTeacherCustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				B2278C6C2A325FC1007BAB19 /* AssignTeacherCustomCell.swift */,
+			);
+			path = AssignTeacherCustomCell;
+			sourceTree = "<group>";
+		};
+		B2278C6E2A33C070007BAB19 /* ClassRoomVC */ = {
+			isa = PBXGroup;
+			children = (
+				B2278C872A3518B9007BAB19 /* CustomCellClassRoom */,
+				B2278C6F2A33C0C1007BAB19 /* ClassRoomViewControllerForTeacher.swift */,
+			);
+			path = ClassRoomVC;
+			sourceTree = "<group>";
+		};
+		B2278C742A33CD01007BAB19 /* TeacherProfileVC */ = {
+			isa = PBXGroup;
+			children = (
+				B2278C752A33CDBF007BAB19 /* TeacherProfileViewController.swift */,
+			);
+			path = TeacherProfileVC;
+			sourceTree = "<group>";
+		};
+		B2278C7B2A347C13007BAB19 /* TeacherAnnouncements */ = {
+			isa = PBXGroup;
+			children = (
+				B2278C7E2A347CA2007BAB19 /* CustomCellTeacherAnnouncement */,
+				B2278C7C2A347C8E007BAB19 /* DisplayTeacherAnnouncementViewController.swift */,
+			);
+			path = TeacherAnnouncements;
+			sourceTree = "<group>";
+		};
+		B2278C7E2A347CA2007BAB19 /* CustomCellTeacherAnnouncement */ = {
+			isa = PBXGroup;
+			children = (
+				B2278C7F2A347CE6007BAB19 /* DisplayTeacherAnnouncementCustomCell.swift */,
+			);
+			path = CustomCellTeacherAnnouncement;
+			sourceTree = "<group>";
+		};
+		B2278C812A347EEA007BAB19 /* ParentAnnouncements */ = {
+			isa = PBXGroup;
+			children = (
+				B2278C842A347F55007BAB19 /* CustomCellParentAnnouncement */,
+				B2278C822A347F34007BAB19 /* DisplayParentAnnouncementViewController.swift */,
+			);
+			path = ParentAnnouncements;
+			sourceTree = "<group>";
+		};
+		B2278C842A347F55007BAB19 /* CustomCellParentAnnouncement */ = {
+			isa = PBXGroup;
+			children = (
+				B2278C852A347F8C007BAB19 /* DisplayParentAnnouncementCustomCell.swift */,
+			);
+			path = CustomCellParentAnnouncement;
+			sourceTree = "<group>";
+		};
+		B2278C872A3518B9007BAB19 /* CustomCellClassRoom */ = {
+			isa = PBXGroup;
+			children = (
+				B2278C882A351929007BAB19 /* ClassRoomStudentsCustomCell.swift */,
+			);
+			path = CustomCellClassRoom;
+			sourceTree = "<group>";
+		};
+		B250A86E2A0D30B8000BEEF5 /* AnnouncementManagement */ = {
+			isa = PBXGroup;
+			children = (
+				B250A86F2A0D3120000BEEF5 /* AnnouncementManagementViewController.swift */,
+				B25281E02A22114D00DB8B82 /* MakeAnnouncement */,
+				B29753A92A251D9A003645C6 /* UpdateAnnouncement */,
+				B25281E22A22119100DB8B82 /* RemoveAnnouncement */,
+				B25281E12A22115D00DB8B82 /* PreviewAnnouncement */,
+			);
+			path = AnnouncementManagement;
+			sourceTree = "<group>";
+		};
+		B2515F092A17EF9E00EE9DB4 /* PreviewAllTeachersVC */ = {
+			isa = PBXGroup;
+			children = (
+				B25160BC2A16300900B8F0D1 /* CustomCells */,
+				B25160BA2A162F2600B8F0D1 /* PreviewTeacherListViewController.swift */,
+				B2515F0A2A17F02500EE9DB4 /* TeacherRecordDetailViewController.swift */,
+			);
+			path = PreviewAllTeachersVC;
+			sourceTree = "<group>";
+		};
+		B2515F0C2A180D4200EE9DB4 /* RemoveTeacherVC */ = {
+			isa = PBXGroup;
+			children = (
+				B2515F0F2A18F26600EE9DB4 /* CustomCell */,
+				B2515F0D2A180D7000EE9DB4 /* RemoveTeacherViewController.swift */,
+			);
+			path = RemoveTeacherVC;
+			sourceTree = "<group>";
+		};
+		B2515F0F2A18F26600EE9DB4 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				B2515F102A18F29E00EE9DB4 /* RemoveTeacherCustomCell.swift */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		B25160BC2A16300900B8F0D1 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				B25160BD2A16304800B8F0D1 /* CustomTeacherRecordCell.swift */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		B25160BF2A16B10D00B8F0D1 /* TeacherDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				B25160C02A16B14D00B8F0D1 /* TeacherDataModelForAdmin.swift */,
+			);
+			path = TeacherDataModel;
+			sourceTree = "<group>";
+		};
+		B25281E02A22114D00DB8B82 /* MakeAnnouncement */ = {
+			isa = PBXGroup;
+			children = (
+				B2A8F71E29DC9F4D006061D7 /* MakeAnnouncementViewController.swift */,
+			);
+			path = MakeAnnouncement;
+			sourceTree = "<group>";
+		};
+		B25281E12A22115D00DB8B82 /* PreviewAnnouncement */ = {
+			isa = PBXGroup;
+			children = (
+				B2A8882F2A2148CE00BD7441 /* CustomCell */,
+				B2C39A2229E91385004016CF /* DisplayAnnouncementViewController.swift */,
+			);
+			path = PreviewAnnouncement;
+			sourceTree = "<group>";
+		};
+		B25281E22A22119100DB8B82 /* RemoveAnnouncement */ = {
+			isa = PBXGroup;
+			children = (
+				B29753AC2A251EEE003645C6 /* CustomCell */,
+				B25281E32A2211B700DB8B82 /* RemoveAnnouncementViewController.swift */,
+			);
+			path = RemoveAnnouncement;
+			sourceTree = "<group>";
+		};
+		B268B3D429BB8E6700F4DC27 /* dataStructures */ = {
+			isa = PBXGroup;
+			children = (
+				B268B3D529BB8E8E00F4DC27 /* StudentData.swift */,
+			);
+			path = dataStructures;
+			sourceTree = "<group>";
+		};
+		B28994D829ECC5F000B24EDF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B28994E629ECFBE000B24EDF /* AnnouncementData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B28994E129ECEB9100B24EDF /* AnnouncementFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B28994E229ECEBE500B24EDF /* SchoolAnnouncementViewController.swift */,
+				B28994E429ECECA800B24EDF /* CustomAnnouncementCell.swift */,
+			);
+			path = AnnouncementFiles;
+			sourceTree = "<group>";
+		};
+		B29753A92A251D9A003645C6 /* UpdateAnnouncement */ = {
+			isa = PBXGroup;
+			children = (
+				B29753AD2A251EFD003645C6 /* CustomCell */,
+				B29753AA2A251DC6003645C6 /* AnnouncementListViewController.swift */,
+				B29753B02A252478003645C6 /* UpdateAnnouncementViewController.swift */,
+			);
+			path = UpdateAnnouncement;
+			sourceTree = "<group>";
+		};
+		B29753AC2A251EEE003645C6 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				B25281E52A22129300DB8B82 /* CustomCellForRemoveAnnouncement.swift */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		B29753AD2A251EFD003645C6 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				B29753AE2A251F3F003645C6 /* CustomCellForUpdateAnnouncement.swift */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		B29753B22A274E64003645C6 /* AdminTabs */ = {
+			isa = PBXGroup;
+			children = (
+				B2C39A3029EA2DFC004016CF /* AdminSideMoreViewController.swift */,
+				B2C39A2A29E97709004016CF /* PlusViewController.swift */,
+				045E7C1C299E278D00B8EEFE /* AdminDashboard.swift */,
+			);
+			path = AdminTabs;
+			sourceTree = "<group>";
+		};
+		B29753B32A274EA8003645C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B28994DB29ECCD1B00B24EDF /* AdminData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B29753B62A2755A6003645C6 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				B28994D929ECC60800B24EDF /* TeacherDataModel.swift */,
+				B2278C8A2A3520F5007BAB19 /* StudentDataModelForTeacher.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		B29753B72A275667003645C6 /* ParentsTabBars */ = {
+			isa = PBXGroup;
+			children = (
+				B29753B82A275738003645C6 /* ParentDashboard.swift */,
+				B2278C792A33E559007BAB19 /* ParentSideMoreViewController.swift */,
+			);
+			path = ParentsTabBars;
+			sourceTree = "<group>";
+		};
+		B29753BA2A27632D003645C6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B250A86A2A053833000BEEF5 /* ParentTabBarViewController.swift */,
+				B29753B72A275667003645C6 /* ParentsTabBars */,
+				B29753C42A28A04F003645C6 /* AttendenceReportVC */,
+				B29753BB2A27635B003645C6 /* ParentProfileVC */,
+				B2278C812A347EEA007BAB19 /* ParentAnnouncements */,
+				81531A202A7D756700A21831 /* ProgressReport */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B29753BB2A27635B003645C6 /* ParentProfileVC */ = {
+			isa = PBXGroup;
+			children = (
+				B29753BC2A27637E003645C6 /* ParentProfileViewController.swift */,
+			);
+			path = ParentProfileVC;
+			sourceTree = "<group>";
+		};
+		B29753C12A27DCBB003645C6 /* ParentDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				B29753C22A27DCDC003645C6 /* ParentRecordModel.swift */,
+			);
+			path = ParentDataModel;
+			sourceTree = "<group>";
+		};
+		B29753C42A28A04F003645C6 /* AttendenceReportVC */ = {
+			isa = PBXGroup;
+			children = (
+				B29753C72A28A920003645C6 /* CustomCellForAttendenceCell */,
+				B29753C52A28A44A003645C6 /* AttendenceReportViewController.swift */,
+			);
+			path = AttendenceReportVC;
+			sourceTree = "<group>";
+		};
+		B29753C72A28A920003645C6 /* CustomCellForAttendenceCell */ = {
+			isa = PBXGroup;
+			children = (
+				B29753C82A28A99D003645C6 /* AttendenceDateCustomCell.swift */,
+			);
+			path = CustomCellForAttendenceCell;
+			sourceTree = "<group>";
+		};
+		B29753CA2A2A4AE1003645C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B29753CB2A2A4B07003645C6 /* TopImageBottomLabelView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B298FE052A193B2600BA4FF8 /* UpdateTeacherVC */ = {
+			isa = PBXGroup;
+			children = (
+				B298FE082A193BEC00BA4FF8 /* CustomCell */,
+				B298FE062A193B6D00BA4FF8 /* TeacherListViewController.swift */,
+				B298FE0B2A193F5E00BA4FF8 /* UpdateTeacherViewController.swift */,
+			);
+			path = UpdateTeacherVC;
+			sourceTree = "<group>";
+		};
+		B298FE082A193BEC00BA4FF8 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				B298FE092A193C0200BA4FF8 /* TeacherListCustomCell.swift */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		B2A8882F2A2148CE00BD7441 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				B2A888302A2148F300BD7441 /* AnnouncementCustomCell.swift */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		B2C39A2629E9581D004016CF /* studentManagement */ = {
+			isa = PBXGroup;
+			children = (
+				B2C39A3429EBB62E004016CF /* Model */,
+				B2C39A2829E958E1004016CF /* StudentManagementViewController.swift */,
+				045E7C1A299E278D00B8EEFE /* RegisterStudentViewController.swift */,
+				B2C39A3229EA55FC004016CF /* SearchStudentViewController.swift */,
+				B2C39A3729EBC017004016CF /* RemoveStudentViewController.swift */,
+				B2C023972A141C9800677BC7 /* UpdateStudentViewController.swift */,
+			);
+			path = studentManagement;
+			sourceTree = "<group>";
+		};
+		B2C39A2729E9583A004016CF /* teacherManagement */ = {
+			isa = PBXGroup;
+			children = (
+				B25160BF2A16B10D00B8F0D1 /* TeacherDataModel */,
+				B298FE052A193B2600BA4FF8 /* UpdateTeacherVC */,
+				B2515F0C2A180D4200EE9DB4 /* RemoveTeacherVC */,
+				B2515F092A17EF9E00EE9DB4 /* PreviewAllTeachersVC */,
+				B2C39A2C29EA25B3004016CF /* TeacherManagementViewController.swift */,
+				045E7C22299E497100B8EEFE /* RegisterTeacherViewController.swift */,
+			);
+			path = teacherManagement;
+			sourceTree = "<group>";
+		};
+		B2C39A3429EBB62E004016CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B2C39A3529EBB6A7004016CF /* student.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FBD4595D81F13689759A9C4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				274416359C9C47F92EC2807F /* Pods_LinkUp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		045E7BF9299E241000B8EEFE /* LinkUp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 045E7C0E299E241200B8EEFE /* Build configuration list for PBXNativeTarget "LinkUp" */;
+			buildPhases = (
+				ED8717E12C9E9F8FD8514B43 /* [CP] Check Pods Manifest.lock */,
+				045E7BF6299E241000B8EEFE /* Sources */,
+				045E7BF7299E241000B8EEFE /* Frameworks */,
+				045E7BF8299E241000B8EEFE /* Resources */,
+				A8AEB32BD59564E60B1B6810 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LinkUp;
+			productName = LinkUp;
+			productReference = 045E7BFA299E241000B8EEFE /* LinkUp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		045E7BF2299E241000B8EEFE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					045E7BF9299E241000B8EEFE = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 045E7BF5299E241000B8EEFE /* Build configuration list for PBXProject "LinkUp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 045E7BF1299E241000B8EEFE;
+			productRefGroup = 045E7BFB299E241000B8EEFE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				045E7BF9299E241000B8EEFE /* LinkUp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		045E7BF8299E241000B8EEFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045E7C0A299E241200B8EEFE /* LaunchScreen.storyboard in Resources */,
+				045E7C07299E241200B8EEFE /* Assets.xcassets in Resources */,
+				045E7C12299E276200B8EEFE /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A8AEB32BD59564E60B1B6810 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LinkUp/Pods-LinkUp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LinkUp/Pods-LinkUp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LinkUp/Pods-LinkUp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED8717E12C9E9F8FD8514B43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LinkUp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		045E7BF6299E241000B8EEFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2278C762A33CDBF007BAB19 /* TeacherProfileViewController.swift in Sources */,
+				B2278C6D2A325FC1007BAB19 /* AssignTeacherCustomCell.swift in Sources */,
+				B2278C7D2A347C8E007BAB19 /* DisplayTeacherAnnouncementViewController.swift in Sources */,
+				B2C39A3829EBC017004016CF /* RemoveStudentViewController.swift in Sources */,
+				B25281E42A2211B700DB8B82 /* RemoveAnnouncementViewController.swift in Sources */,
+				B2A888312A2148F300BD7441 /* AnnouncementCustomCell.swift in Sources */,
+				B205032F2A36DC2F00229F58 /* AssessmentManagementViewController.swift in Sources */,
+				B2C39A3329EA55FC004016CF /* SearchStudentViewController.swift in Sources */,
+				B298FE0A2A193C0200BA4FF8 /* TeacherListCustomCell.swift in Sources */,
+				B2278C652A3227D9007BAB19 /* classesListViewController.swift in Sources */,
+				B250A86B2A053833000BEEF5 /* ParentTabBarViewController.swift in Sources */,
+				B298FE072A193B6D00BA4FF8 /* TeacherListViewController.swift in Sources */,
+				B298FE0C2A193F5E00BA4FF8 /* UpdateTeacherViewController.swift in Sources */,
+				045E7C1F299E278E00B8EEFE /* AdminDashboard.swift in Sources */,
+				B2278C622A320DE0007BAB19 /* ClassDataModel.swift in Sources */,
+				B2A8F71F29DC9F4D006061D7 /* MakeAnnouncementViewController.swift in Sources */,
+				04CFDE7D299E92AA008300F9 /* TeacherDashboard.swift in Sources */,
+				B2C39A2929E958E1004016CF /* StudentManagementViewController.swift in Sources */,
+				B29753AB2A251DC6003645C6 /* AnnouncementListViewController.swift in Sources */,
+				B2C39A2B29E97709004016CF /* PlusViewController.swift in Sources */,
+				B2278C5A2A2F41D9007BAB19 /* ClassesManagementViewController.swift in Sources */,
+				045E7BFE299E241000B8EEFE /* AppDelegate.swift in Sources */,
+				B2278C572A2E4CB0007BAB19 /* Utilities.swift in Sources */,
+				B28994E529ECECA800B24EDF /* CustomAnnouncementCell.swift in Sources */,
+				B2515F112A18F29E00EE9DB4 /* RemoveTeacherCustomCell.swift in Sources */,
+				B250A8702A0D3120000BEEF5 /* AnnouncementManagementViewController.swift in Sources */,
+				B2278C832A347F34007BAB19 /* DisplayParentAnnouncementViewController.swift in Sources */,
+				B2278C5D2A2F4486007BAB19 /* PreviewClassesViewController.swift in Sources */,
+				B29753CC2A2A4B07003645C6 /* TopImageBottomLabelView.swift in Sources */,
+				B29753B92A275738003645C6 /* ParentDashboard.swift in Sources */,
+				B268B3D629BB8E8E00F4DC27 /* StudentData.swift in Sources */,
+				B2C39A3129EA2DFC004016CF /* AdminSideMoreViewController.swift in Sources */,
+				B2278C7A2A33E559007BAB19 /* ParentSideMoreViewController.swift in Sources */,
+				B2C023982A141C9800677BC7 /* UpdateStudentViewController.swift in Sources */,
+				B29753C62A28A44A003645C6 /* AttendenceReportViewController.swift in Sources */,
+				045E7C23299E497100B8EEFE /* RegisterTeacherViewController.swift in Sources */,
+				B2278C602A3208E2007BAB19 /* PreviewClassesCustomCell.swift in Sources */,
+				B28994DC29ECCD1B00B24EDF /* AdminData.swift in Sources */,
+				B29753C92A28A99D003645C6 /* AttendenceDateCustomCell.swift in Sources */,
+				B25160BE2A16304800B8F0D1 /* CustomTeacherRecordCell.swift in Sources */,
+				81531A222A7D75B700A21831 /* ProgressReportVC.swift in Sources */,
+				045E7C17299E277800B8EEFE /* LoginViewController.swift in Sources */,
+				B28994E329ECEBE500B24EDF /* SchoolAnnouncementViewController.swift in Sources */,
+				B2515F0E2A180D7000EE9DB4 /* RemoveTeacherViewController.swift in Sources */,
+				B29753B12A252478003645C6 /* UpdateAnnouncementViewController.swift in Sources */,
+				045E7C00299E241000B8EEFE /* SceneDelegate.swift in Sources */,
+				B2278C8B2A3520F5007BAB19 /* StudentDataModelForTeacher.swift in Sources */,
+				B2C39A2329E91385004016CF /* DisplayAnnouncementViewController.swift in Sources */,
+				81531A282A7D768600A21831 /* LableDesign.swift in Sources */,
+				B28994E729ECFBE000B24EDF /* AnnouncementData.swift in Sources */,
+				B205033D2A36E65900229F58 /* QuizManagementViewController.swift in Sources */,
+				B29753BD2A27637E003645C6 /* ParentProfileViewController.swift in Sources */,
+				B205033B2A36E53500229F58 /* QuizMarksTableViewCell.swift in Sources */,
+				B2C39A2529E9172F004016CF /* AdminTabBarViewController.swift in Sources */,
+				B20503352A36E15900229F58 /* QuizMarksUploadCustomCell.swift in Sources */,
+				B2C39A3629EBB6A7004016CF /* student.swift in Sources */,
+				B28994E029ECD6DC00B24EDF /* TeacherSideMoreViewController.swift in Sources */,
+				B2515F0B2A17F02500EE9DB4 /* TeacherRecordDetailViewController.swift in Sources */,
+				B25160BB2A162F2600B8F0D1 /* PreviewTeacherListViewController.swift in Sources */,
+				81531A252A7D75EF00A21831 /* CustomTableView.swift in Sources */,
+				B25281E62A22129300DB8B82 /* CustomCellForRemoveAnnouncement.swift in Sources */,
+				045E7C26299E4FB500B8EEFE /* DatabaseManager.swift in Sources */,
+				B2278C862A347F8C007BAB19 /* DisplayParentAnnouncementCustomCell.swift in Sources */,
+				B29753C32A27DCDC003645C6 /* ParentRecordModel.swift in Sources */,
+				B2278C6A2A323FCB007BAB19 /* AssignTeacherToClassViewController.swift in Sources */,
+				81531A2C2A7ECD6800A21831 /* FireBaseFile.swift in Sources */,
+				B25160C12A16B14D00B8F0D1 /* TeacherDataModelForAdmin.swift in Sources */,
+				B20503372A36E3CA00229F58 /* AddQuizPortailViewController.swift in Sources */,
+				045E7C1D299E278E00B8EEFE /* RegisterStudentViewController.swift in Sources */,
+				B29753AF2A251F3F003645C6 /* CustomCellForUpdateAnnouncement.swift in Sources */,
+				B20503322A36E09800229F58 /* UploadQuizMarksViewController.swift in Sources */,
+				B2278C702A33C0C1007BAB19 /* ClassRoomViewControllerForTeacher.swift in Sources */,
+				81531A2A2A7D95A400A21831 /* DataModel.swift in Sources */,
+				B2C39A2D29EA25B3004016CF /* TeacherManagementViewController.swift in Sources */,
+				B2278C892A351929007BAB19 /* ClassRoomStudentsCustomCell.swift in Sources */,
+				B28994DA29ECC60800B24EDF /* TeacherDataModel.swift in Sources */,
+				B2278C802A347CE6007BAB19 /* DisplayTeacherAnnouncementCustomCell.swift in Sources */,
+				045E7C28299E50D200B8EEFE /* FirestoreManager.swift in Sources */,
+				B28994DE29ECCFB800B24EDF /* TeacherTabBarViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		045E7C08299E241200B8EEFE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				045E7C09299E241200B8EEFE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		045E7C0C299E241200B8EEFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		045E7C0D299E241200B8EEFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		045E7C0F299E241200B8EEFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A3C46C3F6E0BAF03BB31618 /* Pods-LinkUp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LinkUp/LinkUp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3P2XXS785Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LinkUp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hamza.LinkUp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		045E7C10299E241200B8EEFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F8A6166FA15002F36D22F48 /* Pods-LinkUp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LinkUp/LinkUp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3P2XXS785Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LinkUp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hamza.LinkUp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		045E7BF5299E241000B8EEFE /* Build configuration list for PBXProject "LinkUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045E7C0C299E241200B8EEFE /* Debug */,
+				045E7C0D299E241200B8EEFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		045E7C0E299E241200B8EEFE /* Build configuration list for PBXNativeTarget "LinkUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045E7C0F299E241200B8EEFE /* Debug */,
+				045E7C10299E241200B8EEFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 045E7BF2299E241000B8EEFE /* Project object */;
+}
